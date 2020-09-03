@@ -57,7 +57,9 @@ defmodule Sandbox.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:excoveralls, "0.13.1", only: :test}
+      {:excoveralls, "0.13.1", only: :test},
+      {:ecto, "3.4.6"},
+      {:phoenix_ecto, "4.2.0"}
     ]
   end
 
