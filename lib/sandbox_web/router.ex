@@ -4,8 +4,8 @@ defmodule SandboxWeb.Router do
   alias Sandbox.Data
 
   pipeline :api do
+    plug :auth
     plug :accepts, ["json"]
-    plug :api_token
   end
 
   scope "/api", SandboxWeb do
@@ -30,7 +30,12 @@ defmodule SandboxWeb.Router do
     end
   end
 
-  defp api_token(conn, _opts) do
-    assign(conn, :api_token, Data.example_api_token())
+  defp auth(conn, _opts) do
+    with {api_token, _pass} <- Plug.BasicAuth.parse_basic_auth(conn),
+         :ok <- Data.find_api_token(api_token) do
+      assign(conn, :api_token, api_token)
+    else
+      _ -> conn |> Plug.BasicAuth.request_basic_auth() |> halt()
+    end
   end
 end
