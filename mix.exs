@@ -10,7 +10,24 @@ defmodule Sandbox.MixProject do
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
-      deps: deps()
+      deps: deps(),
+      test_coverage: test_coverage(),
+      preferred_cli_env: preferred_cli_env()
+    ]
+  end
+
+  defp test_coverage do
+    [
+      tool: ExCoveralls
+    ]
+  end
+
+  defp preferred_cli_env do
+    [
+      "coveralls.detail": :test,
+      "coveralls.html": :test,
+      "coveralls.json": :test,
+      coveralls: :test
     ]
   end
 
@@ -39,7 +56,8 @@ defmodule Sandbox.MixProject do
       {:telemetry_poller, "~> 0.4"},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"}
+      {:plug_cowboy, "~> 2.0"},
+      {:excoveralls, "0.13.1", only: :test}
     ]
   end
 
