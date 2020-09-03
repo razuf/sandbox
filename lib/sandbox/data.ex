@@ -4,8 +4,11 @@ defmodule Sandbox.Data do
   """
 
   alias Sandbox.Data.Account
+  alias Sandbox.Data.Transaction
 
   # internal Api
+
+  # acccounts
 
   def find_api_token(api_token) do
     case Enum.find(do_list_api_tokens(), fn token -> token == api_token end) do
@@ -34,6 +37,11 @@ defmodule Sandbox.Data do
 
   defp account_from_json(json) do
     Jason.decode!(json, keys: :atoms)
+  end
+
+  # transactions
+  def get_transactions_by_id(id) do
+    Jason.decode!(do_get_transactions_by_id(id), keys: :atoms)
   end
 
   # some example data
@@ -105,5 +113,53 @@ defmodule Sandbox.Data do
 
   defp do_get_accounts_by_id(_not_matched) do
     nil
+  end
+
+  defp do_get_transactions_by_id("test_acc_-LDWVmLQ") do
+    ~s([
+      {
+          "account_id": "test_acc_-LDWVmLQ",
+          "amount": "-18.2",
+          "date": "2020-09-03",
+          "description": "Papa John's",
+          "id": "test_txn_WUINMxB1",
+          "links": {
+              "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
+              "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_WUINMxB1"
+          },
+          "running_balance": "144.98",
+          "type": "card_payment"
+      },
+      {
+          "account_id": "test_acc_-LDWVmLQ",
+          "amount": "-34.62",
+          "date": "2020-09-02",
+          "description": "CVS",
+          "id": "test_txn_kxMoBAGs",
+          "links": {
+              "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
+              "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_kxMoBAGs"
+          },
+          "running_balance": "163.18",
+          "type": "card_payment"
+      },
+      {
+          "account_id": "test_acc_-LDWVmLQ",
+          "amount": "-32.79",
+          "date": "2020-09-01",
+          "description": "CVS",
+          "id": "test_txn_4_iw1lZi",
+          "links": {
+              "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
+              "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_4_iw1lZi"
+          },
+          "running_balance": "197.80",
+          "type": "card_payment"
+      }
+    ])
+  end
+
+  defp do_get_transactions_by_id(_not_matched) do
+    []
   end
 end

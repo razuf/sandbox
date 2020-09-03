@@ -12,6 +12,8 @@ defmodule SandboxWeb.Router do
     pipe_through :api
 
     get "/accounts", AccountController, :index
+    get "/accounts/:account_id", AccountController, :show
+    get "/accounts/:account_id/transactions", TransactionController, :transactions
   end
 
   # Enables LiveDashboard only for development

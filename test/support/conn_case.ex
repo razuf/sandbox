@@ -28,6 +28,11 @@ defmodule SandboxWeb.ConnCase do
 
       # The default endpoint for testing
       @endpoint SandboxWeb.Endpoint
+
+      def using_basic_auth(conn, api_token) do
+        header_content = "Basic " <> Base.encode64("#{api_token}:")
+        conn |> put_req_header("authorization", header_content)
+      end
     end
   end
 

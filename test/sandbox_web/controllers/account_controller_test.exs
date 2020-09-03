@@ -9,11 +9,6 @@ defmodule SandboxWeb.AccountControllerTest do
     {:ok, conn: put_req_header(conn, "accept", "application/json")}
   end
 
-  defp using_basic_auth(conn, api_token) do
-    header_content = "Basic " <> Base.encode64("#{api_token}:")
-    conn |> put_req_header("authorization", header_content)
-  end
-
   describe "index" do
     test "lists all accounts for given valid api_token", %{conn: conn} do
       conn =
@@ -40,7 +35,7 @@ defmodule SandboxWeb.AccountControllerTest do
       assert response.status == 401
     end
 
-    test "error when no basic auth with valid api_token", %{conn: conn} do
+    test "error when no basic auth with api_token", %{conn: conn} do
       response = get(conn, Routes.account_path(conn, :index))
       assert response.status == 401
     end
