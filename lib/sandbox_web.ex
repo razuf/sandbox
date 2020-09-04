@@ -63,7 +63,6 @@ defmodule SandboxWeb do
       # Import basic rendering functionality (render, render_layout, etc)
       import Phoenix.View
 
-      import SandboxWeb.ErrorHelpers
       import SandboxWeb.Gettext
       alias SandboxWeb.Router.Helpers, as: Routes
     end

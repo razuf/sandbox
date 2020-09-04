@@ -23,14 +23,14 @@ defmodule SandboxWeb.Router do
   # If your application does not have an admins-only section yet,
   # you can use Plug.BasicAuth to set up some basic authentication
   # as long as you are also using SSL (which you should anyway).
-  if Mix.env() in [:dev, :test] do
-    import Phoenix.LiveDashboard.Router
+  # if Mix.env() in [:dev, :test] do
+  #   import Phoenix.LiveDashboard.Router
 
-    scope "/" do
-      pipe_through [:fetch_session, :protect_from_forgery]
-      live_dashboard "/dashboard", metrics: SandboxWeb.Telemetry
-    end
-  end
+  #   scope "/" do
+  #     pipe_through [:fetch_session, :protect_from_forgery]
+  #     live_dashboard "/dashboard", metrics: SandboxWeb.Telemetry
+  #   end
+  # end
 
   defp auth(conn, _opts) do
     with {api_token, _pass} <- Plug.BasicAuth.parse_basic_auth(conn),

@@ -21,6 +21,19 @@ defmodule Sandbox.Data do
     List.first(do_list_api_tokens())
   end
 
+  def example_list_all_api_token() do
+    do_list_api_tokens()
+  end
+
+  def example_first_account_id(api_token) do
+    account =
+      api_token
+      |> list_accounts()
+      |> List.first()
+
+    account.id
+  end
+
   # api_token auth
 
   def find_api_token(api_token) do
@@ -166,7 +179,7 @@ defmodule Sandbox.Data do
     |> Jason.decode!(keys: :atoms)
   end
 
-  defp do_get_transactions_by_id(_not_matched) do
+  defp do_get_transactions_by_id(_api_token, _not_matched) do
     []
   end
 

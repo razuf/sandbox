@@ -13,19 +13,21 @@ defmodule SandboxWeb.AccountControllerTest do
 
   describe "accounts index" do
     test "lists all accounts for given valid api_token", %{conn: conn} do
-      conn =
-        conn
-        |> using_basic_auth(Data.example_api_token())
+      for api_token <- Data.example_list_all_api_token() do
+        conn =
+          conn
+          |> using_basic_auth(api_token)
 
-      accounts = Data.list_accounts(Data.example_api_token())
+        accounts = Data.list_accounts(api_token)
 
-      conn = get(conn, Routes.account_path(conn, :index))
+        conn = get(conn, Routes.account_path(conn, :index))
 
-      result =
-        response(conn, 200)
-        |> Jason.decode!(keys: :atoms)
+        result =
+          response(conn, 200)
+          |> Jason.decode!(keys: :atoms)
 
-      assert result.data == accounts
+        assert result.data == accounts
+      end
     end
 
     test "error when api_token is invalid", %{conn: conn} do
