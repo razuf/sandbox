@@ -3,12 +3,25 @@ defmodule Sandbox.Data do
   The Data context.
   """
 
-  alias Sandbox.Data.Account
-  alias Sandbox.Data.Transaction
+  @app Mix.Project.config()[:app]
 
-  # internal Api
+  # testing
 
-  # acccounts
+  def example_account_id() do
+    account =
+      do_list_api_tokens()
+      |> List.first()
+      |> list_accounts()
+      |> List.first()
+
+    account.id
+  end
+
+  def example_api_token() do
+    List.first(do_list_api_tokens())
+  end
+
+  # api_token auth
 
   def find_api_token(api_token) do
     case Enum.find(do_list_api_tokens(), fn token -> token == api_token end) do
@@ -17,45 +30,34 @@ defmodule Sandbox.Data do
     end
   end
 
+  # acccounts
+
   def list_accounts(api_token) do
     do_list_accounts(api_token)
   end
 
-  def get_accounts_by_id(api_token) do
-    do_get_accounts_by_id(api_token)
-  end
-
-  def example_api_token() do
-    List.first(do_list_api_tokens())
-  end
-
-  defp do_list_accounts(api_token) do
-    [
-      Jason.decode!(do_get_accounts_by_id(api_token), keys: :atoms)
-    ]
-  end
-
-  defp account_from_json(json) do
-    Jason.decode!(json, keys: :atoms)
+  def get_account_by_id(api_token, account_id) do
+    do_get_account_by_id(api_token, account_id)
   end
 
   # transactions
-  def get_transactions_by_id(id) do
-    Jason.decode!(do_get_transactions_by_id(id), keys: :atoms)
+
+  def get_transactions_by_id(api_token, account_id) do
+    do_get_transactions_by_id(api_token, account_id)
   end
 
   # some example data
 
   defp do_list_api_tokens() do
     [
-      "test_acc_-LDWVmLQ",
-      "test_acc_jumJMEtb"
+      "test_CQBfUQMcicDV__AhXOOCSA",
+      "test_FxCedFqjKlgmbtuYdw4235"
     ]
   end
 
-  defp do_get_accounts_by_id("test_acc_-LDWVmLQ") do
-    ~s(
-    {
+  defp do_list_accounts("test_CQBfUQMcicDV__AhXOOCSA") do
+    ~s([
+      {
         "account_number": "8070518251",
         "balances": {
             "available": "144.98",
@@ -79,11 +81,12 @@ defmodule Sandbox.Data do
         "subtype": "checking",
         "type": "depository"
     }
-  )
+    ])
+    |> Jason.decode!(keys: :atoms)
   end
 
-  defp do_get_accounts_by_id("test_acc_jumJMEtb") do
-    ~s(
+  defp do_list_accounts("test_FxCedFqjKlgmbtuYdw4235") do
+    ~s([
       {
         "account_number": "5122860384",
         "balances": {
@@ -107,59 +110,107 @@ defmodule Sandbox.Data do
         },
         "subtype": "checking",
         "type": "depository"
+    },
+      {
+        "account_number": "5122860385",
+        "balances": {
+            "available": "999999.99",
+            "ledger": "999999.99"
+        },
+        "currency_code": "EUR",
+        "enrollment_id": "test_enr_8aiZfKMh",
+        "id": "test_acc_kumJMEtb",
+        "institution": {
+            "id": "chase",
+            "name": "Chase"
+        },
+        "links": {
+            "self": "https://api.teller.io/accounts/test_acc_kumJMEtb",
+            "transactions": "https://api.teller.io/accounts/test_acc_kumJMEtb/transactions"
+        },
+        "name": "Teller API Sandbox Checking 2",
+        "routing_numbers": {
+            "ach": "615153803"
+        },
+        "subtype": "checking",
+        "type": "depository"
     }
-    )
+    ])
+    |> Jason.decode!(keys: :atoms)
   end
 
-  defp do_get_accounts_by_id(_not_matched) do
-    nil
+  defp do_list_accounts(_not_matched) do
+    []
   end
 
-  defp do_get_transactions_by_id("test_acc_-LDWVmLQ") do
+  # account
+  def do_get_account_by_id(api_token, account_id) do
+    do_list_accounts(api_token)
+    |> Enum.find(fn account -> account.id == account_id end)
+  end
+
+  # transactions
+  # Todo: 90 days back from today and each day one transaction
+
+  defp do_get_transactions_by_id("test_CQBfUQMcicDV__AhXOOCSA", "test_acc_-LDWVmLQ") do
+    Application.app_dir(@app, "priv/examples/example_transactions.json")
+    |> File.read!()
+    |> Jason.decode!(keys: :atoms)
+  end
+
+  defp do_get_transactions_by_id(
+         "test_FxCedFqjKlgmbtuYdw4235" = api_token,
+         "test_acc_jumJMEtb" = account_id
+       ) do
+    generate_transactions(account_id)
+    |> Jason.decode!(keys: :atoms)
+  end
+
+  defp do_get_transactions_by_id(_not_matched) do
+    []
+  end
+
+  defp generate_transactions(account_id) do
     ~s([
       {
-          "account_id": "test_acc_-LDWVmLQ",
+          "account_id": "#{account_id}",
           "amount": "-18.2",
           "date": "2020-09-03",
           "description": "Papa John's",
           "id": "test_txn_WUINMxB1",
           "links": {
-              "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-              "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_WUINMxB1"
+              "account": "https://api.teller.io/accounts/#{account_id}",
+              "self": "https://api.teller.io/accounts/#{account_id}/transactions/test_txn_WUINMxB1"
           },
           "running_balance": "144.98",
           "type": "card_payment"
       },
       {
-          "account_id": "test_acc_-LDWVmLQ",
+          "account_id": "#{account_id}",
           "amount": "-34.62",
           "date": "2020-09-02",
           "description": "CVS",
           "id": "test_txn_kxMoBAGs",
           "links": {
-              "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-              "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_kxMoBAGs"
+              "account": "https://api.teller.io/accounts/#{account_id}",
+              "self": "https://api.teller.io/accounts/#{account_id}/transactions/test_txn_kxMoBAGs"
           },
           "running_balance": "163.18",
           "type": "card_payment"
       },
       {
-          "account_id": "test_acc_-LDWVmLQ",
+          "account_id": "#{account_id}",
           "amount": "-32.79",
           "date": "2020-09-01",
           "description": "CVS",
           "id": "test_txn_4_iw1lZi",
           "links": {
-              "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-              "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_4_iw1lZi"
+              "account": "https://api.teller.io/accounts/#{account_id}",
+              "self": "https://api.teller.io/accounts/#{account_id}/transactions/test_txn_4_iw1lZi"
           },
           "running_balance": "197.80",
           "type": "card_payment"
       }
     ])
-  end
-
-  defp do_get_transactions_by_id(_not_matched) do
-    []
   end
 end

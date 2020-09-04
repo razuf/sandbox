@@ -4,24 +4,23 @@ defmodule Sandbox.DataTest do
   alias Sandbox.Data
 
   describe "accounts" do
-    alias Sandbox.Data.Account
+    test "list_accounts/1 returns all accounts for given api_token" do
+      assert Data.list_accounts(Data.example_api_token()) ==
+               Data.list_accounts(Data.example_api_token())
+    end
+  end
 
-    test "list_accounts/1 returns all accounts for given token" do
-      account =
-        Data.get_accounts_by_id(Data.example_api_token())
-        |> Jason.decode!(keys: :atoms)
-
-      assert Data.list_accounts(Data.example_api_token()) == [account]
+  describe "account" do
+    test "get_account_by_id/2 returns the account for given api_token and account_id" do
+      assert Data.get_account_by_id(Data.example_api_token(), Data.example_account_id()) ==
+               Data.get_account_by_id(Data.example_api_token(), Data.example_account_id())
     end
   end
 
   describe "transactions" do
-    alias Sandbox.Data.Transaction
-
-    test "get_transactions_by_id/1 returns all transactions for given account_id" do
-      # must be always the same ;-)
-      assert Data.get_transactions_by_id(Data.example_api_token()) ==
-               Data.get_transactions_by_id(Data.example_api_token())
+    test "get_transactions_by_id/2 returns all transactions for given account_id" do
+      assert Data.get_transactions_by_id(Data.example_api_token(), Data.example_account_id()) ==
+               Data.get_transactions_by_id(Data.example_api_token(), Data.example_account_id())
     end
   end
 end

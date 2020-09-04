@@ -2,7 +2,6 @@ defmodule SandboxWeb.TransactionControllerTest do
   use SandboxWeb.ConnCase
 
   alias Sandbox.Data
-  alias Sandbox.Data.Transaction
 
   @invalid_api_token "wrong_api_token"
   @invalid_account_id "wrong_account_id"
@@ -17,9 +16,10 @@ defmodule SandboxWeb.TransactionControllerTest do
         conn
         |> using_basic_auth(Data.example_api_token())
 
-      transactions = Data.get_transactions_by_id(Data.example_api_token())
+      transactions =
+        Data.get_transactions_by_id(Data.example_api_token(), Data.example_account_id())
 
-      conn = get(conn, Routes.transaction_path(conn, :transactions, Data.example_api_token()))
+      conn = get(conn, Routes.transaction_path(conn, :transactions, Data.example_account_id()))
 
       result =
         response(conn, 200)
@@ -33,12 +33,16 @@ defmodule SandboxWeb.TransactionControllerTest do
         conn
         |> using_basic_auth(@invalid_api_token)
 
-      response = get(conn, Routes.transaction_path(conn, :transactions, Data.example_api_token()))
+      response =
+        get(conn, Routes.transaction_path(conn, :transactions, Data.example_account_id()))
+
       assert response.status == 401
     end
 
     test "error when no basic auth with api_token", %{conn: conn} do
-      response = get(conn, Routes.transaction_path(conn, :transactions, Data.example_api_token()))
+      response =
+        get(conn, Routes.transaction_path(conn, :transactions, Data.example_account_id()))
+
       assert response.status == 401
     end
   end

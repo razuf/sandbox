@@ -8,7 +8,7 @@ defmodule SandboxWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/api", SandboxWeb do
+  scope "/", SandboxWeb do
     pipe_through :api
 
     get "/accounts", AccountController, :index
