@@ -4,7 +4,7 @@ defmodule SandboxWeb.TransactionControllerTest do
   alias Sandbox.Data
 
   @invalid_api_token "wrong_api_token"
-  @invalid_account_id "wrong_account_id"
+  # @invalid_account_id "wrong_account_id"
 
   setup %{conn: conn} do
     {:ok, conn: put_req_header(conn, "accept", "application/json")}
@@ -12,7 +12,7 @@ defmodule SandboxWeb.TransactionControllerTest do
 
   describe "get transactions with account_id" do
     test "renders all transactions when api_token and account_id are valid", %{conn: conn} do
-      for api_token <- Data.example_list_all_api_token() do
+      for api_token <- Data.list_api_token() do
         conn =
           conn
           |> using_basic_auth(api_token)
@@ -44,6 +44,8 @@ defmodule SandboxWeb.TransactionControllerTest do
 
       assert response.status == 401
     end
+
+    # Todo: error when account_id is invalid
 
     test "error when no basic auth with api_token", %{conn: conn} do
       response =

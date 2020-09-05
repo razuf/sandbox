@@ -4,7 +4,7 @@ defmodule SandboxWeb.AccountControllerTest do
   alias Sandbox.Data
 
   @invalid_api_token "wrong_api_token"
-  @another_account_id "test_acc_jumJMEtb"
+  @another_account_id "test_acc_K-QfLaI=_JzKvyYA=_NP8A1cc="
   @app Mix.Project.config()[:app]
 
   setup %{conn: conn} do
@@ -13,7 +13,7 @@ defmodule SandboxWeb.AccountControllerTest do
 
   describe "accounts index" do
     test "lists all accounts for given valid api_token", %{conn: conn} do
-      for api_token <- Data.example_list_all_api_token() do
+      for api_token <- Data.list_api_token() do
         conn =
           conn
           |> using_basic_auth(api_token)
