@@ -60,7 +60,8 @@ defmodule Sandbox.MixProject do
       {:excoveralls, "~> 0.13.1", only: :test},
       {:ecto, "~> 3.4.6"},
       {:phoenix_ecto, "~> 4.2.0"},
-      {:apa, "~> 0.6.9"}
+      {:apa, "~> 0.6.9"},
+      {:ex_money, "~> 5.3.0"}
     ]
   end
 

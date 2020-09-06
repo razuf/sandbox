@@ -4,7 +4,6 @@ defmodule Sandbox.Data.Token do
 
   @private_key_1 215_732_071_525
   @private_key_2 270_248_626_247
-  @private_key_3 193_839_617_024
 
   # example generate keys
   # def random_key(len) do
@@ -12,48 +11,67 @@ defmodule Sandbox.Data.Token do
   #   |> :crypto.bytes_to_integer()
   # end
 
-  def generate_token({type, balance, amount_offset, description_offset})
-      when is_binary(type)
-      when is_binary(balance)
-      when is_binary(amount_offset)
-      when is_binary(description_offset) do
-    enc_balance = encrypt(balance, @private_key_1)
-    enc_amount_offset = encrypt(amount_offset, @private_key_2)
-    enc_description_offset = encrypt(description_offset, @private_key_3)
+  def generate_token({_type, "-" <> _rest = balance, _offset}) do
+    raise(ArgumentError, "Wrong balance: #{inspect(balance)}")
+  end
 
-    "test_#{type}_#{enc_balance}_#{enc_amount_offset}_#{enc_description_offset}"
+  def generate_token({type, balance, offset})
+      when is_binary(type) and
+             is_binary(balance) and
+             is_integer(offset) and
+             offset > 0 do
+    enc_balance =
+      balance
+      |> clean_balance_to_int()
+      |> encrypt(@private_key_1)
+
+    enc_offset = encrypt(offset, @private_key_2)
+
+    "test_#{type}_#{enc_balance}_#{enc_offset}"
   end
 
   def decrypt_token(token) when is_binary(token) do
-    [_test, type, enc_balance, enc_amount_offset, enc_description_offset] =
-      String.split(token, "_")
+    case String.split(token, "_") do
+      [_test, type, enc_balance, enc_offset] ->
+        balance =
+          enc_balance
+          |> decrypt(@private_key_1)
+          |> recreate_float_string()
 
-    balance = decrypt(enc_balance, @private_key_1)
-    amount_offset = decrypt(enc_amount_offset, @private_key_2)
-    description_offset = decrypt(enc_description_offset, @private_key_3)
+        offset = decrypt(enc_offset, @private_key_2)
 
-    {type, "#{balance}", "#{amount_offset}", "#{description_offset}"}
+        {type, "#{balance}", offset}
+
+      _ ->
+        :error
+    end
   end
 
-  def encrypt(token_part, private_key) do
-    token_part
-    |> clean_string_to_int()
+  defp encrypt(token_part_int, private_key) do
+    token_part_int
     |> Bitwise.^^^(private_key)
     |> :binary.encode_unsigned()
     |> Base.url_encode64()
   end
 
-  def decrypt(encrypted, private_key) do
+  defp decrypt(encrypted, private_key) do
     encrypted
     |> Base.url_decode64!()
     |> :binary.decode_unsigned()
     |> Bitwise.^^^(private_key)
   end
 
-  def clean_string_to_int(binary) do
+  defp clean_balance_to_int(binary) do
     binary
+    |> Apa.mul("100")
     |> Apa.parse()
+    |> Apa.abs()
     |> Apa.to_string(-1, 0)
     |> String.to_integer()
+  end
+
+  defp recreate_float_string(int_value) do
+    int_value
+    |> Apa.div("100")
   end
 end

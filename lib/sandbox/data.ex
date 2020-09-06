@@ -6,25 +6,6 @@ defmodule Sandbox.Data do
   alias Sandbox.Data.Account
   alias Sandbox.Data.Transaction
 
-  # for tests
-
-  def example_api_token() do
-    List.first(list_api_token())
-  end
-
-  def example_account_id() do
-    list_api_token()
-    |> List.first()
-    |> example_first_account_id()
-  end
-
-  def example_first_account_id(api_token) do
-    api_token
-    |> list_accounts()
-    |> List.first()
-    |> Map.get(:id)
-  end
-
   # api_token auth
 
   def find_api_token(api_token) do
@@ -37,7 +18,10 @@ defmodule Sandbox.Data do
   # acccounts
 
   def list_accounts(api_token) do
-    Account.list_accounts(api_token)
+    case find_api_token(api_token) do
+      :ok -> Account.list_accounts(api_token)
+      _ -> []
+    end
   end
 
   def get_account_by_id(api_token, account_id) do
@@ -54,8 +38,10 @@ defmodule Sandbox.Data do
 
   def list_api_token() do
     [
-      "test_CQBfUQMcicDV__AhXOOCSA",
-      "test_api_Mjqtblo=_PuwSHHY=_LSG8Vcg="
+      # compare with original teller API
+      # "test_CQBfUQMcicDV__AhXOOCSA",
+      "test_api_Mjqtblo=_PuwSHHY=",
+      "test_api_K-QfLaI=_PHpU0YA="
     ]
   end
 end
