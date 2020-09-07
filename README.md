@@ -21,7 +21,7 @@ GET /accounts/:account_id/transactions
 
 ## generate example data
 
-- look into Account or Transaction
+- look into [Account](https://github.com/razuf/sandbox/blob/master/lib/sandbox/data/account.ex) or [Transaction](https://github.com/razuf/sandbox/blob/master/lib/sandbox/data/transaction.ex)
 
 ## API Token generation
 
