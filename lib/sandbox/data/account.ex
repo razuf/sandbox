@@ -108,11 +108,10 @@ defmodule Sandbox.Data.Account do
   defp generate_list_of_accounts(api_token) do
     case Token.decrypt_token(api_token) do
       {"api", balance, offset} ->
-        # number of accounts rem(offset, 3) - also der rest von div 3 = 0, 1 oder 2
-        [
-          generate_account(balance, offset),
-          generate_account(Apa.add(balance, "123456.78"), offset + 2)
-        ]
+        for i <- 0..rem(offset, 3) do
+          generate_account(Apa.add(balance, "123456.78"), offset + i)
+        end
+        |> IO.inspect(label: "### binding")
 
       _ ->
         []
