@@ -1,4 +1,4 @@
-# sandbox
+# Sandbox
 
 Implementation of a API test server that returns JSON encoded accounts and transactions.
 
