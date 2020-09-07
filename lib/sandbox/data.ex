@@ -37,11 +37,6 @@ defmodule Sandbox.Data do
   # data
 
   def list_api_token() do
-    [
-      # compare with original teller API
-      # "test_CQBfUQMcicDV__AhXOOCSA",
-      "test_api_Mjqtblo=_PuwSHHY=",
-      "test_api_K-QfLaI=_PHpU0YA="
-    ]
+    Application.fetch_env!(:sandbox, :sandbox_api_token)
   end
 end

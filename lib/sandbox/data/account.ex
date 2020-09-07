@@ -111,7 +111,6 @@ defmodule Sandbox.Data.Account do
         for i <- 0..rem(offset, 3) do
           generate_account(Apa.add(balance, "123456.78"), offset + i)
         end
-        |> IO.inspect(label: "### binding")
 
       _ ->
         []
