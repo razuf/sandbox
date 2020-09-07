@@ -42,3 +42,14 @@ Example:
   To use this generated api token please put it into config.exs:
 
       config :sandbox, Token, sandbox_api_token: ["first_token", "second_token"]
+
+## Todo:
+
+Maybe some more stuff like:
+
+1.  Token - for more secure enviroments in ENV vars:
+```
+      export SANDBOX_API_TOKEN='["first_token", "second_token"]'
+```
+2. more dynamic generation of Transactions
+3. LiveView dashboard - maybe metrics or admin interface for Token handling
