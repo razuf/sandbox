@@ -41,7 +41,7 @@ Example:
 
   To use this generated api token please put it into config.exs:
 
-      config :sandbox, Token, sandbox_api_token: ["first_token", "second_token"]
+      config :sandbox, sandbox_api_token: ["first_token", "second_token"]
 
 ## Todo:
 
