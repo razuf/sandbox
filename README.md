@@ -51,5 +51,7 @@ Maybe some more stuff like:
 ```
       export SANDBOX_API_TOKEN='["first_token", "second_token"]'
 ```
-2. more dynamic generation of Transactions
-3. LiveView dashboard - maybe metrics or admin interface for Token handling
+2. Balance amount check - because transaction could run out of money if the balance was to low (maybe allow negative balance???)
+3. more dynamic generation of Transactions
+4. LiveView dashboard - maybe metrics or admin interface for Token handling
+
