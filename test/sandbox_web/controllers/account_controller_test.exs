@@ -31,7 +31,7 @@ defmodule SandboxWeb.AccountControllerTest do
           response(conn, 200)
           |> Jason.decode!(keys: :atoms)
 
-        assert result.data == accounts
+        assert result == accounts
       end)
     end
 
@@ -75,7 +75,7 @@ defmodule SandboxWeb.AccountControllerTest do
         response(conn, 200)
         |> Jason.decode!(keys: :atoms)
 
-      assert result.data == account
+      assert result == account
     end
 
     test "error when api_token is invalid", %{conn: conn} do
@@ -121,7 +121,7 @@ defmodule SandboxWeb.AccountControllerTest do
   #       response(conn, 200)
   #       |> Jason.decode!(keys: :atoms)
 
-  #     assert result.data == teller_accounts
+  #     assert result == teller_accounts
   #   end
   # end
 end

@@ -44,7 +44,7 @@ defmodule SandboxWeb.TransactionControllerTest do
             response(conn, 200)
             |> Jason.decode!(keys: :atoms)
 
-          assert result.data == transactions
+          assert result == transactions
       end
     end
 
