@@ -37,6 +37,15 @@ defmodule Sandbox.Data do
   # data
 
   def list_api_token() do
-    Application.fetch_env!(:sandbox, :sandbox_api_token)
+    case System.get_env("SANDBOX_API_TOKEN") do
+      nil ->
+        Application.fetch_env!(:sandbox, :sandbox_api_token)
+
+      token_list ->
+        token_list
+        |> (String.split(":")
+            |> Kernel.++(Application.fetch_env!(:sandbox, :sandbox_api_token)))
+        |> List.delete("")
+    end
   end
 end

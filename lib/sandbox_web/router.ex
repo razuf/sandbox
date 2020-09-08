@@ -8,12 +8,22 @@ defmodule SandboxWeb.Router do
     plug :accepts, ["json"]
   end
 
+  pipeline :api_dev do
+    plug :accepts, ["json"]
+  end
+
   scope "/", SandboxWeb do
     pipe_through :api
 
     get "/accounts", AccountController, :index
     get "/accounts/:account_id", AccountController, :show
     get "/accounts/:account_id/transactions", TransactionController, :transactions
+  end
+
+  scope "/", SandboxWeb do
+    pipe_through :api_dev
+
+    get "/token", TokenController, :create
   end
 
   # Enables LiveDashboard only for development

@@ -43,15 +43,33 @@ Example:
 
       config :sandbox, sandbox_api_token: ["first_token", "second_token"]
 
+alternatively and more secure is ENV var handling (separation with ":"):
+```
+  export SANDBOX_API_TOKEN=first_token:second_token
+```
+
+## Token generation via http request
+
+Because it's for dev testing - any tester could create automatically their own token.
+
+added route:
+```
+GET /token
+```
+
+response:
+```
+{
+    "token": "test_api_Adtct0OYShUq_PuwSyFA="
+}
+```
+
+
 ## Todo:
 
 Maybe some more stuff like:
 
-1.  Token - for more secure enviroments in ENV vars:
-```
-      export SANDBOX_API_TOKEN='["first_token", "second_token"]'
-```
-2. Balance amount check - because transaction could run out of money if the balance was to low (maybe allow negative balance???)
-3. more dynamic generation of Transactions
-4. LiveView dashboard - maybe metrics or admin interface for Token handling
+1. Balance amount check - because transaction could run out of money if the balance was to low (maybe allow negative balance???)
+2. more dynamic generation of Transactions
+3. LiveView dashboard - maybe metrics or admin interface for Token handling
 
