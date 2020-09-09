@@ -1,6 +1,6 @@
 # Sandbox
 
-Implementation of a API test server that returns JSON encoded accounts and transactions.
+Implementation of an API test server that returns JSON encoded accounts and transactions - no database, dynamic generation of data, almost stateless.
 
 ## routes
 ```
