@@ -25,8 +25,6 @@ config :phoenix, :json_library, Jason
 
 config :sandbox,
   sandbox_api_token: [
-    # compare with original teller API
-    # "test_CQBfUQMcicDV__AhXOOCSA",
     "test_api_Mjqtblo=_PuwSHHY=",
     "test_api_K-QfLaI=_PHpU0YA=",
     "test_api_Mj9XzM0=_PuwSyE8="

@@ -4,28 +4,9 @@ defmodule Sandbox.Data.Transaction do
   alias Sandbox.Data.Token
 
   @number_of_days_for_tx_feed 90
-  # @app Mix.Project.config()[:app]
 
-  def get_transactions_by_id(api_token, account_id) do
-    do_get_transactions_by_id(api_token, account_id)
-  end
-
-  defp do_get_transactions_by_id(
-         "test_api_Mjqtblo=_PuwSHHY=",
-         account_id
-       ) do
+  def get_transactions_by_id(_api_token, account_id) do
     generate_list_of_txs(account_id)
-  end
-
-  # compare with original teller API
-  # defp do_get_transactions_by_id("test_CQBfUQMcicDV__AhXOOCSA", "test_acc_-LDWVmLQ") do
-  #   Application.app_dir(@app, "priv/examples/example_transactions.json")
-  #   |> File.read!()
-  #   |> Jason.decode!(keys: :atoms)
-  # end
-
-  defp do_get_transactions_by_id(_api_token, _not_matched) do
-    []
   end
 
   ###
