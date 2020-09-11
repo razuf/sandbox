@@ -8,9 +8,6 @@ defmodule SandboxWeb.AccountControllerTest do
   @valid_account_id "test_acc_Mjqtblo=_PuwSyEY="
   @another_account_id "test_acc_K-QfLaI=_JzKvyYA="
 
-  # @original_teller_api_account "test_CQBfUQMcicDV__AhXOOCSA"
-  # @app Mix.Project.config()[:app]
-
   setup %{conn: conn} do
     {:ok, conn: put_req_header(conn, "accept", "application/json")}
   end

@@ -24,9 +24,10 @@ defmodule SandboxWeb.TokenController do
         api_token = Token.generate_token({"api", balance, offset})
 
         new_token_list =
-          System.get_env("SANDBOX_API_TOKEN")
-          |> Kernel.<>(":")
-          |> Kernel.<>(api_token)
+          case System.get_env("SANDBOX_API_TOKEN") do
+            nil -> api_token
+            token_list -> token_list <> ":" <> api_token
+          end
 
         System.put_env("SANDBOX_API_TOKEN", new_token_list)
 

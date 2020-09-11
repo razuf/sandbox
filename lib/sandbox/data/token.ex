@@ -51,12 +51,12 @@ defmodule Sandbox.Data.Token do
     token_part_int
     |> Bitwise.^^^(private_key)
     |> :binary.encode_unsigned()
-    |> Base.url_encode64()
+    |> Base.encode32(padding: false)
   end
 
   defp decrypt(encrypted, private_key) do
     encrypted
-    |> Base.url_decode64!()
+    |> Base.decode32!(padding: false)
     |> :binary.decode_unsigned()
     |> Bitwise.^^^(private_key)
   end

@@ -25,10 +25,13 @@ config :phoenix, :json_library, Jason
 
 config :sandbox,
   sandbox_api_token: [
-    "test_api_Mjqtblo=_PuwSHHY=",
-    "test_api_K-QfLaI=_PHpU0YA=",
-    "test_api_Mj9XzM0=_PuwSyE8="
+    "test_api_GBXKTT42_H3WBFSSY",
+    "test_api_VEBMYJWP_H3WBFS6X"
   ]
+
+# "test_api_Mjqtblo=_PuwSHHY=",
+# "test_api_K-QfLaI=_PHpU0YA=",
+# "test_api_Mj9XzM0=_PuwSyE8="
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.

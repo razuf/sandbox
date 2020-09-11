@@ -32,8 +32,11 @@ defmodule Sandbox.Data do
 
   def get_transactions_by_id(api_token, account_id) do
     case find_api_token(api_token) do
-      :ok -> Transaction.get_transactions_by_id(api_token, account_id)
-      _ -> []
+      :ok ->
+        Transaction.get_transactions_by_id(api_token, account_id)
+
+      _ ->
+        []
     end
   end
 

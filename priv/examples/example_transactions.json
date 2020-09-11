@@ -6,8 +6,8 @@
         "description": "Papa John's",
         "id": "test_txn_WUINMxB1",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_WUINMxB1"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_WUINMxB1"
         },
         "running_balance": "144.98",
         "type": "card_payment"
@@ -19,8 +19,8 @@
         "description": "CVS",
         "id": "test_txn_kxMoBAGs",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_kxMoBAGs"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_kxMoBAGs"
         },
         "running_balance": "163.18",
         "type": "card_payment"
@@ -32,8 +32,8 @@
         "description": "CVS",
         "id": "test_txn_4_iw1lZi",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_4_iw1lZi"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_4_iw1lZi"
         },
         "running_balance": "197.80",
         "type": "card_payment"
@@ -45,8 +45,8 @@
         "description": "iTunes",
         "id": "test_txn_QFxL7jBI",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_QFxL7jBI"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_QFxL7jBI"
         },
         "running_balance": "230.59",
         "type": "card_payment"
@@ -58,8 +58,8 @@
         "description": "Walgreens",
         "id": "test_txn_sSVqS0Fq",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_sSVqS0Fq"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_sSVqS0Fq"
         },
         "running_balance": "244.78",
         "type": "card_payment"
@@ -71,8 +71,8 @@
         "description": "KFC",
         "id": "test_txn_yyd9wxfq",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_yyd9wxfq"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_yyd9wxfq"
         },
         "running_balance": "246.19",
         "type": "card_payment"
@@ -84,8 +84,8 @@
         "description": "Apple",
         "id": "test_txn_squ97j4a",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_squ97j4a"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_squ97j4a"
         },
         "running_balance": "266.55",
         "type": "card_payment"
@@ -97,8 +97,8 @@
         "description": "Gap",
         "id": "test_txn_C-YwQU7y",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_C-YwQU7y"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_C-YwQU7y"
         },
         "running_balance": "274.24",
         "type": "card_payment"
@@ -110,8 +110,8 @@
         "description": "Papa John's",
         "id": "test_txn_h72KBGjs",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_h72KBGjs"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_h72KBGjs"
         },
         "running_balance": "290.99",
         "type": "card_payment"
@@ -123,8 +123,8 @@
         "description": "Amazon",
         "id": "test_txn_Bf6PR0mY",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_Bf6PR0mY"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_Bf6PR0mY"
         },
         "running_balance": "330.92",
         "type": "card_payment"
@@ -136,8 +136,8 @@
         "description": "Panera",
         "id": "test_txn_eRMOwiPJ",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_eRMOwiPJ"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_eRMOwiPJ"
         },
         "running_balance": "348.32",
         "type": "card_payment"
@@ -149,8 +149,8 @@
         "description": "IKEA",
         "id": "test_txn_IhXQsg2n",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_IhXQsg2n"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_IhXQsg2n"
         },
         "running_balance": "387.16",
         "type": "card_payment"
@@ -162,8 +162,8 @@
         "description": "Bed, Bath & Beyond",
         "id": "test_txn_fviO3gsO",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_fviO3gsO"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_fviO3gsO"
         },
         "running_balance": "399.48",
         "type": "card_payment"
@@ -175,8 +175,8 @@
         "description": "Wingstop",
         "id": "test_txn_KgJkvRz_",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_KgJkvRz_"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_KgJkvRz_"
         },
         "running_balance": "424.02",
         "type": "card_payment"
@@ -188,8 +188,8 @@
         "description": "Wendy's",
         "id": "test_txn_27OBd_N6",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_27OBd_N6"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_27OBd_N6"
         },
         "running_balance": "431.24",
         "type": "card_payment"
@@ -201,8 +201,8 @@
         "description": "TJ Maxx",
         "id": "test_txn_oSHIrapF",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_oSHIrapF"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_oSHIrapF"
         },
         "running_balance": "470.36",
         "type": "card_payment"
@@ -214,8 +214,8 @@
         "description": "In-N-Out Burger",
         "id": "test_txn_ZEZusqd8",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_ZEZusqd8"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_ZEZusqd8"
         },
         "running_balance": "495.11",
         "type": "card_payment"
@@ -227,8 +227,8 @@
         "description": "Misson Ceviche",
         "id": "test_txn_GY-ZPi5h",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_GY-ZPi5h"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_GY-ZPi5h"
         },
         "running_balance": "532.45",
         "type": "card_payment"
@@ -240,8 +240,8 @@
         "description": "Sears",
         "id": "test_txn_nNAkuyVG",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_nNAkuyVG"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_nNAkuyVG"
         },
         "running_balance": "563.63",
         "type": "card_payment"
@@ -253,8 +253,8 @@
         "description": "T-Mobile",
         "id": "test_txn_fX9JIKdJ",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_fX9JIKdJ"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_fX9JIKdJ"
         },
         "running_balance": "574.54",
         "type": "card_payment"
@@ -266,8 +266,8 @@
         "description": "Shell",
         "id": "test_txn_YaH7UeJX",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_YaH7UeJX"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_YaH7UeJX"
         },
         "running_balance": "580.98",
         "type": "card_payment"
@@ -279,8 +279,8 @@
         "description": "Staples",
         "id": "test_txn_o5ZlwbL1",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_o5ZlwbL1"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_o5ZlwbL1"
         },
         "running_balance": "592.38",
         "type": "card_payment"
@@ -292,8 +292,8 @@
         "description": "Ross",
         "id": "test_txn_UxLRFeNW",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_UxLRFeNW"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_UxLRFeNW"
         },
         "running_balance": "624.20",
         "type": "card_payment"
@@ -305,8 +305,8 @@
         "description": "Rite Aid",
         "id": "test_txn_UXrvKo0F",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_UXrvKo0F"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_UXrvKo0F"
         },
         "running_balance": "650.58",
         "type": "card_payment"
@@ -318,8 +318,8 @@
         "description": "Dollar General",
         "id": "test_txn_wTE6sJby",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_wTE6sJby"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_wTE6sJby"
         },
         "running_balance": "664.05",
         "type": "card_payment"
@@ -331,8 +331,8 @@
         "description": "Uber",
         "id": "test_txn_tGtyPucv",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_tGtyPucv"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_tGtyPucv"
         },
         "running_balance": "695.73",
         "type": "card_payment"
@@ -344,8 +344,8 @@
         "description": "Hotel Tonight",
         "id": "test_txn_4SfGWdMC",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_4SfGWdMC"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_4SfGWdMC"
         },
         "running_balance": "711.02",
         "type": "card_payment"
@@ -357,8 +357,8 @@
         "description": "Popeye's",
         "id": "test_txn_3jB4fZ4K",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_3jB4fZ4K"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_3jB4fZ4K"
         },
         "running_balance": "727.34",
         "type": "card_payment"
@@ -370,8 +370,8 @@
         "description": "Dunkin' Donuts",
         "id": "test_txn_sVVOKWZ6",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_sVVOKWZ6"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_sVVOKWZ6"
         },
         "running_balance": "743.11",
         "type": "card_payment"
@@ -383,8 +383,8 @@
         "description": "Chipotle Mexican Grill",
         "id": "test_txn_Hxo_sNrc",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_Hxo_sNrc"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_Hxo_sNrc"
         },
         "running_balance": "756.61",
         "type": "card_payment"
@@ -396,8 +396,8 @@
         "description": "Petsmart",
         "id": "test_txn_gfQwfFV_",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_gfQwfFV_"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_gfQwfFV_"
         },
         "running_balance": "784.01",
         "type": "card_payment"
@@ -409,8 +409,8 @@
         "description": "Office Depot",
         "id": "test_txn_DKNg36yA",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_DKNg36yA"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_DKNg36yA"
         },
         "running_balance": "787.70",
         "type": "card_payment"
@@ -422,8 +422,8 @@
         "description": "H.E. Butt",
         "id": "test_txn_hofb-wr3",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_hofb-wr3"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_hofb-wr3"
         },
         "running_balance": "808.66",
         "type": "card_payment"
@@ -435,8 +435,8 @@
         "description": "Sonic",
         "id": "test_txn_2jPgZDgV",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_2jPgZDgV"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_2jPgZDgV"
         },
         "running_balance": "845.34",
         "type": "card_payment"
@@ -448,8 +448,8 @@
         "description": "Office Depot",
         "id": "test_txn_z1pVxkVF",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_z1pVxkVF"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_z1pVxkVF"
         },
         "running_balance": "846.31",
         "type": "card_payment"
@@ -461,8 +461,8 @@
         "description": "Papa John's",
         "id": "test_txn_Z98T6hR3",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_Z98T6hR3"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_Z98T6hR3"
         },
         "running_balance": "857.60",
         "type": "card_payment"
@@ -474,8 +474,8 @@
         "description": "Hotel Tonight",
         "id": "test_txn_l6Ig6_aB",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_l6Ig6_aB"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_l6Ig6_aB"
         },
         "running_balance": "869.11",
         "type": "card_payment"
@@ -487,8 +487,8 @@
         "description": "Sonic",
         "id": "test_txn_Ee8XkT9m",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_Ee8XkT9m"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_Ee8XkT9m"
         },
         "running_balance": "875.72",
         "type": "card_payment"
@@ -500,8 +500,8 @@
         "description": "Sprint PCS",
         "id": "test_txn_XkMqXBVI",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_XkMqXBVI"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_XkMqXBVI"
         },
         "running_balance": "898.09",
         "type": "card_payment"
@@ -513,8 +513,8 @@
         "description": "Sears",
         "id": "test_txn_6r-eUpz4",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_6r-eUpz4"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_6r-eUpz4"
         },
         "running_balance": "906.05",
         "type": "card_payment"
@@ -526,8 +526,8 @@
         "description": "T-Mobile",
         "id": "test_txn_UT9OmMcW",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_UT9OmMcW"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_UT9OmMcW"
         },
         "running_balance": "933.15",
         "type": "card_payment"
@@ -539,8 +539,8 @@
         "description": "In-N-Out Burger",
         "id": "test_txn_wXeRa02Y",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_wXeRa02Y"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_wXeRa02Y"
         },
         "running_balance": "941.47",
         "type": "card_payment"
@@ -552,8 +552,8 @@
         "description": "The Creamery",
         "id": "test_txn_TZg5_mD8",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_TZg5_mD8"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_TZg5_mD8"
         },
         "running_balance": "960.38",
         "type": "card_payment"
@@ -565,8 +565,8 @@
         "description": "The Home Depot",
         "id": "test_txn_nEkFmXg-",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_nEkFmXg-"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_nEkFmXg-"
         },
         "running_balance": "987.98",
         "type": "card_payment"
@@ -578,8 +578,8 @@
         "description": "Uber",
         "id": "test_txn_98GQi5EB",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_98GQi5EB"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_98GQi5EB"
         },
         "running_balance": "1024.78",
         "type": "card_payment"
@@ -591,8 +591,8 @@
         "description": "Slim Chickens",
         "id": "test_txn_LnUlFJrq",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_LnUlFJrq"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_LnUlFJrq"
         },
         "running_balance": "1032.74",
         "type": "card_payment"
@@ -604,8 +604,8 @@
         "description": "J.C. Penney",
         "id": "test_txn_7YwhOehW",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_7YwhOehW"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_7YwhOehW"
         },
         "running_balance": "1038.65",
         "type": "card_payment"
@@ -617,8 +617,8 @@
         "description": "AT&T Wireless",
         "id": "test_txn_RO0wBy5e",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_RO0wBy5e"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_RO0wBy5e"
         },
         "running_balance": "1071.86",
         "type": "card_payment"
@@ -630,8 +630,8 @@
         "description": "Shake Shack",
         "id": "test_txn_4nat-yYB",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_4nat-yYB"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_4nat-yYB"
         },
         "running_balance": "1111.73",
         "type": "card_payment"
@@ -643,8 +643,8 @@
         "description": "Papa John's",
         "id": "test_txn_gA6Fyw09",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_gA6Fyw09"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_gA6Fyw09"
         },
         "running_balance": "1150.61",
         "type": "card_payment"
@@ -656,8 +656,8 @@
         "description": "Shake Shack",
         "id": "test_txn_xI2bTpG-",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_xI2bTpG-"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_xI2bTpG-"
         },
         "running_balance": "1151.11",
         "type": "card_payment"
@@ -669,8 +669,8 @@
         "description": "Walgreens",
         "id": "test_txn_mrnQrQQ8",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_mrnQrQQ8"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_mrnQrQQ8"
         },
         "running_balance": "1151.51",
         "type": "card_payment"
@@ -682,8 +682,8 @@
         "description": "AMC Metreon",
         "id": "test_txn_Ono0B_CH",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_Ono0B_CH"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_Ono0B_CH"
         },
         "running_balance": "1174.65",
         "type": "card_payment"
@@ -695,8 +695,8 @@
         "description": "Foot Locker",
         "id": "test_txn_HG8wRBkK",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_HG8wRBkK"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_HG8wRBkK"
         },
         "running_balance": "1179.94",
         "type": "card_payment"
@@ -708,8 +708,8 @@
         "description": "AT&T Wireless",
         "id": "test_txn_iWArc8Kf",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_iWArc8Kf"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_iWArc8Kf"
         },
         "running_balance": "1199.78",
         "type": "card_payment"
@@ -721,8 +721,8 @@
         "description": "Ross",
         "id": "test_txn_UUsLBpYJ",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_UUsLBpYJ"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_UUsLBpYJ"
         },
         "running_balance": "1232.70",
         "type": "card_payment"
@@ -734,8 +734,8 @@
         "description": "Target",
         "id": "test_txn_giWtFAaX",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_giWtFAaX"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_giWtFAaX"
         },
         "running_balance": "1238.00",
         "type": "card_payment"
@@ -747,8 +747,8 @@
         "description": "Jack In The Box",
         "id": "test_txn_sMDFJklb",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_sMDFJklb"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_sMDFJklb"
         },
         "running_balance": "1272.56",
         "type": "card_payment"
@@ -760,8 +760,8 @@
         "description": "Kohl's",
         "id": "test_txn_i1CuG82A",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_i1CuG82A"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_i1CuG82A"
         },
         "running_balance": "1280.55",
         "type": "card_payment"
@@ -773,8 +773,8 @@
         "description": "Papa John's",
         "id": "test_txn_Q7afNdHD",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_Q7afNdHD"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_Q7afNdHD"
         },
         "running_balance": "1305.52",
         "type": "card_payment"
@@ -786,8 +786,8 @@
         "description": "Amazon",
         "id": "test_txn_X7WU38p7",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_X7WU38p7"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_X7WU38p7"
         },
         "running_balance": "1340.38",
         "type": "card_payment"
@@ -799,8 +799,8 @@
         "description": "Wendy's",
         "id": "test_txn_CrmHBNlZ",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_CrmHBNlZ"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_CrmHBNlZ"
         },
         "running_balance": "1353.10",
         "type": "card_payment"
@@ -812,8 +812,8 @@
         "description": "Office Depot",
         "id": "test_txn_yBjtSP2n",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_yBjtSP2n"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_yBjtSP2n"
         },
         "running_balance": "1370.23",
         "type": "card_payment"
@@ -825,8 +825,8 @@
         "description": "Amazon",
         "id": "test_txn_UUi3HyPO",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_UUi3HyPO"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_UUi3HyPO"
         },
         "running_balance": "1380.37",
         "type": "card_payment"
@@ -838,8 +838,8 @@
         "description": "Spotify",
         "id": "test_txn_exSkgtEa",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_exSkgtEa"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_exSkgtEa"
         },
         "running_balance": "1397.65",
         "type": "card_payment"
@@ -851,8 +851,8 @@
         "description": "MAC",
         "id": "test_txn_6RtjSYbz",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_6RtjSYbz"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_6RtjSYbz"
         },
         "running_balance": "1412.31",
         "type": "card_payment"
@@ -864,8 +864,8 @@
         "description": "The Home Depot",
         "id": "test_txn_ZZyA-L1N",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_ZZyA-L1N"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_ZZyA-L1N"
         },
         "running_balance": "1451.63",
         "type": "card_payment"
@@ -877,8 +877,8 @@
         "description": "McDonald's",
         "id": "test_txn_I_9EqiqF",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_I_9EqiqF"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_I_9EqiqF"
         },
         "running_balance": "1474.84",
         "type": "card_payment"
@@ -890,8 +890,8 @@
         "description": "Nordstrom",
         "id": "test_txn_x-65z7wl",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_x-65z7wl"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_x-65z7wl"
         },
         "running_balance": "1489.13",
         "type": "card_payment"
@@ -903,8 +903,8 @@
         "description": "Dollar General",
         "id": "test_txn_Z6VDdGZo",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_Z6VDdGZo"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_Z6VDdGZo"
         },
         "running_balance": "1524.71",
         "type": "card_payment"
@@ -916,8 +916,8 @@
         "description": "Rooster & Rice",
         "id": "test_txn_OPpZMZRw",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_OPpZMZRw"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_OPpZMZRw"
         },
         "running_balance": "1548.53",
         "type": "card_payment"
@@ -929,8 +929,8 @@
         "description": "Lyft",
         "id": "test_txn_zTLzlfj7",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_zTLzlfj7"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_zTLzlfj7"
         },
         "running_balance": "1552.18",
         "type": "card_payment"
@@ -942,8 +942,8 @@
         "description": "Burger King",
         "id": "test_txn_ngtZUyF4",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_ngtZUyF4"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_ngtZUyF4"
         },
         "running_balance": "1587.04",
         "type": "card_payment"
@@ -955,8 +955,8 @@
         "description": "The Home Depot",
         "id": "test_txn_t9G5aDA6",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_t9G5aDA6"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_t9G5aDA6"
         },
         "running_balance": "1589.31",
         "type": "card_payment"
@@ -968,8 +968,8 @@
         "description": "Lyft",
         "id": "test_txn_uu1oeSn1",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_uu1oeSn1"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_uu1oeSn1"
         },
         "running_balance": "1598.80",
         "type": "card_payment"
@@ -981,8 +981,8 @@
         "description": "Popeye's",
         "id": "test_txn_bdcnDosB",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_bdcnDosB"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_bdcnDosB"
         },
         "running_balance": "1637.46",
         "type": "card_payment"
@@ -994,8 +994,8 @@
         "description": "Ross",
         "id": "test_txn_6yKtdrcZ",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_6yKtdrcZ"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_6yKtdrcZ"
         },
         "running_balance": "1675.18",
         "type": "card_payment"
@@ -1007,8 +1007,8 @@
         "description": "Domino's Pizza",
         "id": "test_txn_FBQqf-Dl",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_FBQqf-Dl"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_FBQqf-Dl"
         },
         "running_balance": "1688.06",
         "type": "card_payment"
@@ -1020,8 +1020,8 @@
         "description": "Nordstrom",
         "id": "test_txn_yoXdWF55",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_yoXdWF55"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_yoXdWF55"
         },
         "running_balance": "1723.58",
         "type": "card_payment"
@@ -1033,8 +1033,8 @@
         "description": "TJ Maxx",
         "id": "test_txn_0A8nBlFQ",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_0A8nBlFQ"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_0A8nBlFQ"
         },
         "running_balance": "1755.34",
         "type": "card_payment"
@@ -1046,8 +1046,8 @@
         "description": "Shell",
         "id": "test_txn_NlX0BFCf",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_NlX0BFCf"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_NlX0BFCf"
         },
         "running_balance": "1764.24",
         "type": "card_payment"
@@ -1059,8 +1059,8 @@
         "description": "Uber Eats",
         "id": "test_txn_DF4iVa2E",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_DF4iVa2E"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_DF4iVa2E"
         },
         "running_balance": "1775.34",
         "type": "card_payment"
@@ -1072,8 +1072,8 @@
         "description": "Lyft",
         "id": "test_txn_UPazj-AM",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_UPazj-AM"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_UPazj-AM"
         },
         "running_balance": "1786.55",
         "type": "card_payment"
@@ -1085,8 +1085,8 @@
         "description": "Jack In The Box",
         "id": "test_txn_IL1kJ7gL",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_IL1kJ7gL"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_IL1kJ7gL"
         },
         "running_balance": "1813.19",
         "type": "card_payment"
@@ -1098,8 +1098,8 @@
         "description": "Kroger",
         "id": "test_txn_iNXpAUzK",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_iNXpAUzK"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_iNXpAUzK"
         },
         "running_balance": "1830.57",
         "type": "card_payment"
@@ -1111,8 +1111,8 @@
         "description": "Domino's Pizza",
         "id": "test_txn_ODn0chf8",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_ODn0chf8"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_ODn0chf8"
         },
         "running_balance": "1861.31",
         "type": "card_payment"
@@ -1124,8 +1124,8 @@
         "description": "H.E. Butt",
         "id": "test_txn_pQ_V5f_K",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_pQ_V5f_K"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_pQ_V5f_K"
         },
         "running_balance": "1882.84",
         "type": "card_payment"
@@ -1137,8 +1137,8 @@
         "description": "AMC Metreon",
         "id": "test_txn_Ewgfcw1J",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_Ewgfcw1J"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_Ewgfcw1J"
         },
         "running_balance": "1908.72",
         "type": "card_payment"
@@ -1150,8 +1150,8 @@
         "description": "Chipotle Mexican Grill",
         "id": "test_txn_k8uSjzFm",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_k8uSjzFm"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_k8uSjzFm"
         },
         "running_balance": "1933.18",
         "type": "card_payment"
@@ -1163,8 +1163,8 @@
         "description": "Saks Fifth Avenue",
         "id": "test_txn_Ygjq4E1o",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_Ygjq4E1o"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_Ygjq4E1o"
         },
         "running_balance": "1939.93",
         "type": "card_payment"
@@ -1176,8 +1176,8 @@
         "description": "Macy's",
         "id": "test_txn_p5sCzenS",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_p5sCzenS"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_p5sCzenS"
         },
         "running_balance": "1953.48",
         "type": "card_payment"
@@ -1189,8 +1189,8 @@
         "description": "Burger King",
         "id": "test_txn_mYjxZFc6",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_mYjxZFc6"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_mYjxZFc6"
         },
         "running_balance": "1955.58",
         "type": "card_payment"
@@ -1202,8 +1202,8 @@
         "description": "Dollar Tree",
         "id": "test_txn_qu2SMVB1",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_qu2SMVB1"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_qu2SMVB1"
         },
         "running_balance": "1990.18",
         "type": "card_payment"
@@ -1215,8 +1215,8 @@
         "description": "Sephora",
         "id": "test_txn_23hVPMHn",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_23hVPMHn"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_23hVPMHn"
         },
         "running_balance": "2000.30",
         "type": "card_payment"
@@ -1228,8 +1228,8 @@
         "description": "Apple",
         "id": "test_txn_2XDv9mMs",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_2XDv9mMs"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_2XDv9mMs"
         },
         "running_balance": "2017.20",
         "type": "card_payment"
@@ -1241,8 +1241,8 @@
         "description": "Sears",
         "id": "test_txn_UGEeDabO",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_UGEeDabO"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_UGEeDabO"
         },
         "running_balance": "2043.55",
         "type": "card_payment"
@@ -1254,8 +1254,8 @@
         "description": "Dick's Sporting Goods",
         "id": "test_txn_V4tms6lF",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_V4tms6lF"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_V4tms6lF"
         },
         "running_balance": "2061.32",
         "type": "card_payment"
@@ -1267,8 +1267,8 @@
         "description": "Sephora",
         "id": "test_txn_6C7hn4lc",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_6C7hn4lc"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_6C7hn4lc"
         },
         "running_balance": "2099.28",
         "type": "card_payment"
@@ -1280,8 +1280,8 @@
         "description": "Spotify",
         "id": "test_txn_slp6Qc5B",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_slp6Qc5B"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_slp6Qc5B"
         },
         "running_balance": "2112.09",
         "type": "card_payment"
@@ -1293,8 +1293,8 @@
         "description": "Shake Shack",
         "id": "test_txn_5SzqEWBm",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_5SzqEWBm"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_5SzqEWBm"
         },
         "running_balance": "2137.01",
         "type": "card_payment"
@@ -1306,8 +1306,8 @@
         "description": "Panera",
         "id": "test_txn_Msv8cP2b",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_Msv8cP2b"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_Msv8cP2b"
         },
         "running_balance": "2163.35",
         "type": "card_payment"
@@ -1319,8 +1319,8 @@
         "description": "Walgreens",
         "id": "test_txn_hOXnXXpC",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_hOXnXXpC"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_hOXnXXpC"
         },
         "running_balance": "2196.00",
         "type": "card_payment"
@@ -1332,8 +1332,8 @@
         "description": "Williams-Sonoma",
         "id": "test_txn_WMT1m7bc",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_WMT1m7bc"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_WMT1m7bc"
         },
         "running_balance": "2199.87",
         "type": "card_payment"
@@ -1345,8 +1345,8 @@
         "description": "Popeye's",
         "id": "test_txn_3vNeSCCI",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_3vNeSCCI"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_3vNeSCCI"
         },
         "running_balance": "2202.16",
         "type": "card_payment"
@@ -1358,8 +1358,8 @@
         "description": "Neiman Marcus",
         "id": "test_txn_1NNgdr5s",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_1NNgdr5s"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_1NNgdr5s"
         },
         "running_balance": "2229.55",
         "type": "card_payment"
@@ -1371,8 +1371,8 @@
         "description": "Burger King",
         "id": "test_txn_DiRUgVii",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_DiRUgVii"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_DiRUgVii"
         },
         "running_balance": "2253.13",
         "type": "card_payment"
@@ -1384,8 +1384,8 @@
         "description": "Hotel Tonight",
         "id": "test_txn_-Lqeygai",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_-Lqeygai"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_-Lqeygai"
         },
         "running_balance": "2275.93",
         "type": "card_payment"
@@ -1397,8 +1397,8 @@
         "description": "The Home Depot",
         "id": "test_txn_TCbig9Vn",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_TCbig9Vn"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_TCbig9Vn"
         },
         "running_balance": "2300.41",
         "type": "card_payment"
@@ -1410,8 +1410,8 @@
         "description": "Aldi",
         "id": "test_txn_nvnL_h6w",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_nvnL_h6w"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_nvnL_h6w"
         },
         "running_balance": "2322.91",
         "type": "card_payment"
@@ -1423,8 +1423,8 @@
         "description": "CVS",
         "id": "test_txn_ewoPsIi_",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_ewoPsIi_"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_ewoPsIi_"
         },
         "running_balance": "2336.36",
         "type": "card_payment"
@@ -1436,8 +1436,8 @@
         "description": "Aldi",
         "id": "test_txn_Y5eCo5P2",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_Y5eCo5P2"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_Y5eCo5P2"
         },
         "running_balance": "2375.86",
         "type": "card_payment"
@@ -1449,8 +1449,8 @@
         "description": "Sears",
         "id": "test_txn_GGqtYESl",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_GGqtYESl"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_GGqtYESl"
         },
         "running_balance": "2385.82",
         "type": "card_payment"
@@ -1462,8 +1462,8 @@
         "description": "In-N-Out Burger",
         "id": "test_txn_mtjh9WjW",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_mtjh9WjW"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_mtjh9WjW"
         },
         "running_balance": "2421.10",
         "type": "card_payment"
@@ -1475,8 +1475,8 @@
         "description": "Nordstrom",
         "id": "test_txn_8a3VEjZb",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_8a3VEjZb"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_8a3VEjZb"
         },
         "running_balance": "2426.37",
         "type": "card_payment"
@@ -1488,8 +1488,8 @@
         "description": "Walmart",
         "id": "test_txn_WodgWNvn",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_WodgWNvn"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_WodgWNvn"
         },
         "running_balance": "2448.17",
         "type": "card_payment"
@@ -1501,8 +1501,8 @@
         "description": "Macy's",
         "id": "test_txn_8AgFp8rz",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_8AgFp8rz"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_8AgFp8rz"
         },
         "running_balance": "2452.53",
         "type": "card_payment"
@@ -1514,8 +1514,8 @@
         "description": "Gap",
         "id": "test_txn_6SPVFGMw",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_6SPVFGMw"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_6SPVFGMw"
         },
         "running_balance": "2474.28",
         "type": "card_payment"
@@ -1527,8 +1527,8 @@
         "description": "AMC Metreon",
         "id": "test_txn_3zUc_G8F",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_3zUc_G8F"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_3zUc_G8F"
         },
         "running_balance": "2475.70",
         "type": "card_payment"
@@ -1540,8 +1540,8 @@
         "description": "J.C. Penney",
         "id": "test_txn_nCNeUtmM",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_nCNeUtmM"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_nCNeUtmM"
         },
         "running_balance": "2507.58",
         "type": "card_payment"
@@ -1553,8 +1553,8 @@
         "description": "Walgreens",
         "id": "test_txn_OdGQHiug",
         "links": {
-            "account": "https://api.teller.io/accounts/test_acc_-LDWVmLQ",
-            "self": "https://api.teller.io/accounts/test_acc_-LDWVmLQ/transactions/test_txn_OdGQHiug"
+            "account": "http://localhost:4000/accounts/test_acc_-LDWVmLQ",
+            "self": "http://localhost:4000/accounts/test_acc_-LDWVmLQ/transactions/test_txn_OdGQHiug"
         },
         "running_balance": "2538.35",
         "type": "card_payment"

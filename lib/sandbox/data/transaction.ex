@@ -70,8 +70,8 @@ defmodule Sandbox.Data.Transaction do
 
   def gen_links(account_id, tx_id) do
     %{
-      account: "https://api.teller.io/accounts/#{account_id}",
-      self: "https://api.teller.io/accounts/#{account_id}/transactions/#{tx_id}"
+      account: "http://localhost:4000/accounts/#{account_id}",
+      self: "http://localhost:4000/accounts/#{account_id}/transactions/#{tx_id}"
     }
   end
 end
