@@ -8,11 +8,14 @@ defmodule Sandbox.Data.Institutions do
 
   def list() do
     [
-      "Chase",
-      "Bank of America",
-      "Wells Fargo",
-      "Citi",
-      "Capital One"
+      "GLS Bank",
+      "Triodos Bank",
+      "KD-Bank",
+      "Steyler Ethik Bank",
+      "Oikocredit",
+      "Umweltbank",
+      "EthikBank",
+      "Tomorrow"
     ]
   end
 end

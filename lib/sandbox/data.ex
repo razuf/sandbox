@@ -6,7 +6,19 @@ defmodule Sandbox.Data do
   alias Sandbox.Data.Account
   alias Sandbox.Data.Transaction
 
-  # api_token auth
+  # api_token
+
+  def list_api_token() do
+    case System.get_env("SANDBOX_API_TOKEN") do
+      nil ->
+        Application.fetch_env!(:sandbox, :sandbox_api_token)
+
+      token_list ->
+        token_list
+        |> (String.split(":", trim: true)
+            |> Kernel.++(Application.fetch_env!(:sandbox, :sandbox_api_token)))
+    end
+  end
 
   def find_api_token(api_token) do
     case Enum.find(list_api_token(), fn token -> token == api_token end) do
@@ -25,7 +37,13 @@ defmodule Sandbox.Data do
   end
 
   def get_account_by_id(api_token, account_id) do
-    Account.get_account_by_id(api_token, account_id)
+    case find_api_token(api_token) do
+      :ok ->
+        Account.get_account_by_id(api_token, account_id)
+
+      _ ->
+        []
+    end
   end
 
   # transactions
@@ -37,21 +55,6 @@ defmodule Sandbox.Data do
 
       _ ->
         []
-    end
-  end
-
-  # data
-
-  def list_api_token() do
-    case System.get_env("SANDBOX_API_TOKEN") do
-      nil ->
-        Application.fetch_env!(:sandbox, :sandbox_api_token)
-
-      token_list ->
-        token_list
-        |> (String.split(":")
-            |> Kernel.++(Application.fetch_env!(:sandbox, :sandbox_api_token)))
-        |> List.delete("")
     end
   end
 end

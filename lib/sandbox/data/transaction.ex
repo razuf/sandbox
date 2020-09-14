@@ -2,8 +2,9 @@ defmodule Sandbox.Data.Transaction do
   alias Sandbox.Data.TransactionAmount
   alias Sandbox.Data.Merchants
   alias Sandbox.Data.Token
+  alias Apa
 
-  @number_of_days_for_tx_feed 90
+  @number_of_days_for_tx_feed 32
 
   def get_transactions_by_id(_api_token, account_id) do
     generate_list_of_txs(account_id)
@@ -69,9 +70,11 @@ defmodule Sandbox.Data.Transaction do
   end
 
   def gen_links(account_id, tx_id) do
+    sandbox_api_url = Application.fetch_env!(:sandbox, :sandbox_api_url)
+
     %{
-      account: "http://localhost:4000/accounts/#{account_id}",
-      self: "http://localhost:4000/accounts/#{account_id}/transactions/#{tx_id}"
+      account: sandbox_api_url <> "/accounts/#{account_id}",
+      self: sandbox_api_url <> "/accounts/#{account_id}/transactions/#{tx_id}"
     }
   end
 end

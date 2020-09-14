@@ -60,7 +60,7 @@ GET /token
 response:
 ```
 {
-    "token": "test_api_Adtct0OYShUq_PuwSyFA="
+    "token": "test_api_GBXKTT42_H3WBFSSY"
 }
 ```
 
@@ -70,6 +70,4 @@ response:
 Maybe some more stuff like:
 
 1. Balance amount check - because transaction could run out of money if the balance was to low (maybe allow negative balance???)
-2. more dynamic generation of Transactions
-3. LiveView dashboard - maybe metrics or admin interface for Token handling
 

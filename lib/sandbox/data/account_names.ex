@@ -8,13 +8,23 @@ defmodule Sandbox.Data.AccountNames do
 
   def list() do
     [
-      "Jimmy Carter",
-      "Ronald Reagan",
-      "George H. W. Bush",
-      "Bill Clinton",
-      "George W. Bush",
-      "Barack Obama",
-      "Donald Trump"
+      "Aristoteles",
+      "Archimedes",
+      "Nikolaus Kopernikus",
+      "Galileo Galilei",
+      "Isaac Newton",
+      "Daniel Bernoulli",
+      "Leonhard Euler",
+      "Heinrich Hertz",
+      "Max Planck",
+      "Marie Curie",
+      "Albert Einstein",
+      "Werner Heisenberg",
+      "Enrico Fermi",
+      "John Archibald Wheeler",
+      "Richard Feynman",
+      "Chen Ning Yang",
+      "Stephen Hawking"
     ]
   end
 end

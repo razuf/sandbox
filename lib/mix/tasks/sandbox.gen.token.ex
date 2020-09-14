@@ -1,5 +1,5 @@
 defmodule Mix.Tasks.Sandbox.Gen.Token do
-  @shortdoc "Generate an Api Token."
+  @shortdoc "Generates an Api Token."
 
   @moduledoc """
   Generates a new Api Token.
@@ -17,9 +17,14 @@ defmodule Mix.Tasks.Sandbox.Gen.Token do
 
       config :sandbox, sandbox_api_token: ["first_token", "second_token"]
 
+  Or add it to ENV vars:
+
+      export SANDBOX_API_TOKEN=first_token:second_token
+
   """
   use Mix.Task
 
+  alias Apa
   alias Sandbox.Data.Token
 
   def run(params) do
@@ -39,7 +44,7 @@ defmodule Mix.Tasks.Sandbox.Gen.Token do
           |> String.to_integer()
 
         api_token = Token.generate_token({"api", balance, offset})
-        IO.puts("\nGenerated Api Token: #{api_token}\n\nPut it you config.exs or ENV vars.\n")
+        IO.puts("\nGenerated Api Token: #{api_token}\n\nPut it in your config.exs or ENV vars.\n")
 
       _ ->
         IO.puts(

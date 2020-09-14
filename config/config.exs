@@ -27,7 +27,8 @@ config :sandbox,
   sandbox_api_token: [
     "test_api_GBXKTT42_H3WBFSSY",
     "test_api_VEBMYJWP_H3WBFS6X"
-  ]
+  ],
+  sandbox_api_url: "http://localhost:4000"
 
 # "test_api_Mjqtblo=_PuwSHHY=",
 # "test_api_K-QfLaI=_PHpU0YA=",

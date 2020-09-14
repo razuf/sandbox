@@ -2,14 +2,19 @@ defmodule Sandbox.Data.Token do
   alias Apa
   alias Bitwise
 
-  @private_key_1 215_732_071_525
-  @private_key_2 270_248_626_247
+  @private_key_balance 215_732_071_525
+  @private_key_offset 270_248_626_247
 
-  # example generate keys
-  # def random_key(len) do
-  #   :crypto.strong_rand_bytes(len)
-  #   |> :crypto.bytes_to_integer()
-  # end
+  def random_key(len) do
+    :crypto.strong_rand_bytes(len)
+    |> :crypto.bytes_to_integer()
+  end
+
+  def generate_random_token(type) do
+    balance = random_key(4) |> to_string()
+    offset = random_key(4)
+    generate_token({type, balance, offset})
+  end
 
   def generate_token({_type, "-" <> _rest = balance, _offset}) do
     raise(ArgumentError, "Wrong balance: #{inspect(balance)}")
@@ -23,9 +28,9 @@ defmodule Sandbox.Data.Token do
     enc_balance =
       balance
       |> clean_balance_to_int()
-      |> encrypt(@private_key_1)
+      |> encrypt(@private_key_balance)
 
-    enc_offset = encrypt(offset, @private_key_2)
+    enc_offset = encrypt(offset, @private_key_offset)
 
     "test_#{type}_#{enc_balance}_#{enc_offset}"
   end
@@ -35,10 +40,10 @@ defmodule Sandbox.Data.Token do
       [_test, type, enc_balance, enc_offset] ->
         balance =
           enc_balance
-          |> decrypt(@private_key_1)
+          |> decrypt(@private_key_balance)
           |> recreate_float_string()
 
-        offset = decrypt(enc_offset, @private_key_2)
+        offset = decrypt(enc_offset, @private_key_offset)
 
         {type, "#{balance}", offset}
 

@@ -12,7 +12,6 @@ defmodule SandboxWeb.AccountView do
 
   def render("account.json", %{account: account}) do
     %{
-      id: account.id,
       account_number: account.account_number,
       name: account.name,
       currency_code: account.currency_code,

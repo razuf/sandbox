@@ -2,6 +2,7 @@ defmodule SandboxWeb.TokenController do
   use SandboxWeb, :controller
 
   alias Sandbox.Data.Token
+  alias Apa
 
   action_fallback SandboxWeb.FallbackController
 

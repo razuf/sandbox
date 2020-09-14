@@ -5,8 +5,8 @@ defmodule SandboxWeb.AccountControllerTest do
 
   @valid_api_token List.first(Data.list_api_token())
   @invalid_api_token "wrong_api_token"
-  @valid_account_id "test_acc_Mjqtblo=_PuwSyEY="
-  @another_account_id "test_acc_K-QfLaI=_JzKvyYA="
+  @valid_account_id "test_acc_GBXKTT42_H3WBFSSY"
+  @another_account_id "test_acc_VEBMYJWP_H3WBFS6X"
 
   setup %{conn: conn} do
     {:ok, conn: put_req_header(conn, "accept", "application/json")}

@@ -3,28 +3,22 @@ defmodule Sandbox.Data.Account do
   alias Sandbox.Data.AccountNames
   alias Sandbox.Data.CurrencyCode
   alias Sandbox.Data.Token
-
-  # @app Mix.Project.config()[:app]
+  alias Apa
 
   def get_account_by_id(api_token, account_id) do
-    do_list_accounts(api_token)
+    list_accounts(api_token)
     |> Enum.find(fn account -> account.id == account_id end)
   end
 
   def list_accounts(api_token) do
-    do_list_accounts(api_token)
-  end
-
-  defp do_list_accounts(api_token) do
     generate_list_of_accounts(api_token)
   end
 
-  # generation of accounts
   defp generate_list_of_accounts(api_token) do
     case Token.decrypt_token(api_token) do
       {"api", balance, offset} ->
         for i <- 0..rem(offset, 3) do
-          generate_account(Apa.add(balance, "123456.78"), offset + i)
+          generate_account(Apa.add(balance, "123456.78"), offset + 12344 + i)
         end
 
       _ ->
@@ -84,9 +78,11 @@ defmodule Sandbox.Data.Account do
   end
 
   defp gen_links(account_id) do
+    sandbox_api_url = Application.fetch_env!(:sandbox, :sandbox_api_url)
+
     %{
-      self: "http://localhost:4000/accounts/#{account_id}",
-      transactions: "http://localhost:4000/accounts/#{account_id}/transactions"
+      self: sandbox_api_url <> "/accounts/#{account_id}",
+      transactions: sandbox_api_url <> "/accounts/#{account_id}/transactions"
     }
   end
 
